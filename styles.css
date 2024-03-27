@@ -19,7 +19,7 @@ header {
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Fondu d'ombre */
     width: 85%; /* Largeur de 80% de la largeur de son conteneur */
-    max-width: 600px; /* Largeur maximale de 600 pixels */
+    max-width: 700px; /* Largeur maximale de 600 pixels */
     height: auto; /* Hauteur automatique en fonction du contenu */
 }
 
