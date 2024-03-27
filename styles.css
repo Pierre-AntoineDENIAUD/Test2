@@ -276,11 +276,11 @@ h1, main p, h2, li {
     }
 
     .countdown-item {
-        width: 15vw; /* Ajuste la taille des éléments du compte à rebours */
-        height: 15vw; /* Garde les éléments carrés */
-        font-size: 5vw; /* Ajuste la taille de la police en fonction de la largeur de l'écran */
-        padding: 2vw; /* Ajuste le padding */
-        margin: 1vw; /* Ajuste les marges pour éviter le chevauchement */
+        width: 6,58vw; /* Ajuste la taille des éléments du compte à rebours */
+        height: 6,58vw; /* Garde les éléments carrés */
+        font-size: 3,38vw; /* Ajuste la taille de la police en fonction de la largeur de l'écran */
+        padding: 1,88vw; /* Ajuste le padding */
+        margin: 1vw - 1vw; /* Ajuste les marges pour éviter le chevauchement */
     }
 
     .rectangle {
