@@ -176,19 +176,19 @@ img {
     margin: 10px;
     user-select: none; /* Empêche la sélection du texte */
     pointer-events: none; /* Désactive les événements de la souris */
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff; /* Texte en blanc */
 }
 
-.blue { border: 3px solid #0099CC; }
-.yellow { background-color: #FFCC00; }
-.black { background-color: #000; }
-.green { background-color: #339900; }
-.red { background-color: #CC0000; }
+.blue { border: 5px solid #0099CC; }
+.yellow { border: 5px solid #FFCC00; }
+.black { border: 5px solid #000; }
+.green { border: 5px solid #339900; }
+.red { border: 5px solid #CC0000; }
 
 .label {
     font-size: 16px;
