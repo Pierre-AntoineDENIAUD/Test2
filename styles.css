@@ -180,6 +180,7 @@ img {
     border-image: linear-gradient(to right, black, white);
     border-image-slice: 1;
     border-width: 7px; 
+    border-style: solid; /* Style de la bordure */
 }
 
 .countdown-item {
