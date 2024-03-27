@@ -184,7 +184,7 @@ img {
     color: #fff; /* Texte en blanc */
 }
 
-.blue { background-color: #0099CC; }
+.blue { border: #0099CC; }
 .yellow { background-color: #FFCC00; }
 .black { background-color: #000; }
 .green { background-color: #339900; }
