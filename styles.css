@@ -278,6 +278,11 @@ h1, main p, h2, li {
     .label {
         font-size: 2.5vw; /* Ajuste la taille de la police des étiquettes */
     }
+    h1, main p, h2, li {
+        font-size: 4vw;
+        flex-direction: row;
+    }
+
 }
 
 /* Adaptations spécifiques pour les smartphones */
