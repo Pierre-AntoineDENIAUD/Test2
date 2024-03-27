@@ -167,20 +167,45 @@ img {
 
 }
 
-.rectangle {
+/*.rectangle {
     max-width: 850px; /* Largeur maximale du rectangle */
-    width: 800px; /* Ajustement automatique de la largeur en fonction du contenu */
-    height: 250px ; /* Ajustement automatique de la hauteur en fonction du contenu */
-    background-color: rgba(255, 255, 255, 1); /* Fond gris avec opacité de 80% */
-    border-radius: 25px; /* Coins arrondis */
-    display: flex; /* Utilisation de flexbox */
-    margin: 0 auto;
+    /*width: 800px; /* Ajustement automatique de la largeur en fonction du contenu */
+    /*height: 250px ; /* Ajustement automatique de la hauteur en fonction du contenu */
+    /*background-color: rgba(255, 255, 255, 1); /* Fond gris avec opacité de 80% */
+    /*border-radius: 25px; /* Coins arrondis */
+   /* display: flex; /* Utilisation de flexbox */
+    /*margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     border-image: linear-gradient(to right, black, white);
     border-image-slice: 1;
     border-width: 7px; 
     border-style: solid; /* Style de la bordure */
+/*}*/
+.rectangle {
+    max-width: 850px; /* Largeur maximale du rectangle */
+    width: 100%; /* Ajustement automatique de la largeur en fonction du contenu */
+    height: 250px; /* Ajustement automatique de la hauteur en fonction du contenu */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond gris avec opacité de 80% */
+    border-radius: 25px; /* Coins arrondis */
+    display: flex; /* Utilisation de flexbox */
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative; /* Position relative pour que le pseudoelement s'applique correctement */
+    overflow: hidden; /* Cache le débordement du dégradé */
+}
+
+.rectangle::before {
+    content: '';
+    position: absolute;
+    top: -7px; /* Ajustez pour chevaucher la bordure */
+    left: -7px; /* Ajustez pour chevaucher la bordure */
+    right: -7px; /* Ajustez pour chevaucher la bordure */
+    bottom: -7px; /* Ajustez pour chevaucher la bordure */
+    z-index: -1;
+    background: linear-gradient(to bottom right, black, white); /* Dégradé de couleur noir vers blanc */
+    border-radius: 25px; /* Coins arrondis */
 }
 
 .countdown-item {
