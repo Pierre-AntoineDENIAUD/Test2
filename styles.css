@@ -261,10 +261,17 @@ h1, main p, h2, li {
         max-width: 100%; /* Utiliser toute la largeur disponible */
     }
 
-    .countdown-container, .rectangle {
+    .countdown-container {
         flex-direction: row; /* Empiler verticalement */
         width: 100%; /* Adapter à la largeur de l'écran */
         height: auto; /* Hauteur automatique */
+    }
+
+    .rectangle {
+        width: 100%; /* Adapter à la largeur de l'écran */
+        height: 100%; /* Hauteur automatique */
+
+
     }
 
     .countdown-item {
