@@ -163,8 +163,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;;
+
 }
 
 .rectangle {
@@ -175,6 +174,8 @@ img {
     border-radius: 25px; /* Coins arrondis */
     display: flex; /* Utilisation de flexbox */
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .countdown-item {
