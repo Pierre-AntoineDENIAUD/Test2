@@ -298,7 +298,7 @@ h1, main p, h2, li {
 
     .rectangle {
         width: 90%; /* Ajuste la largeur du rectangle */
-        height: auto; /* Ajuste la hauteur pour maintenir le ratio d'aspect */
+        height: 90%; /* Ajuste la hauteur pour maintenir le ratio d'aspect */
         padding: 10px; /* Ajuste le padding */
     }
 }
@@ -326,9 +326,6 @@ h1, main p, h2, li {
         font-size: 18px; /* Ajuste légèrement la taille de la police pour économiser de l'espace */
     }
 
-    .rectangle {
-        width: 100%; /* Le rectangle occupe toute la largeur disponible */
-    }
 }
 
 /* Fin des règles responsives */
