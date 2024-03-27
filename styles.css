@@ -14,10 +14,13 @@ header {
 }
 
 .page-title {
-    padding: 40px; /* Espace intérieur pour le contenu */
+    padding: 20px; /* Espace intérieur pour le contenu */
     border: 3px solid #ccc; /* Bordure de 3 pixels de large */
-    border-radius: 15px; /* Coins arrondis */
+    border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Fondu d'ombre */
+    width: 80%; /* Largeur de 80% de la largeur de son conteneur */
+    max-width: 600px; /* Largeur maximale de 600 pixels */
+    height: auto; /* Hauteur automatique en fonction du contenu */
 }
 
 header h1 {
