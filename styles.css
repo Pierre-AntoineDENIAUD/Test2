@@ -188,6 +188,12 @@ img {
     padding: 20px;
     display: flex;
     gap: 10px;
+    max-width: 850px; /* Largeur maximale du rectangle */
+    width: 800px; /* Ajustement automatique de la largeur en fonction du contenu */
+    height: 250px ; /* Ajustement automatique de la hauteur en fonction du contenu */
+    border-radius: 25px; /* Coins arrondis */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
