@@ -293,6 +293,17 @@ h1, main p, h2, li {
     .label {
         font-size: 3vw; /* Ajuste la taille de la police des labels */
     }
+    main {
+        padding: 20px;
+        padding-bottom: 50px; /* Réduction de l'espace au bas sur les écrans plus petits */
+    }
+
+    main p, main h2 {
+        /* Réduction de la marge entre les paragraphes et les titres pour économiser de l'espace */
+        margin-bottom: 15px;
+        /* Adaptation de la largeur maximale pour le centrage */
+        max-width: calc(100% - 40px); /* Réduit l'espace horizontal de padding */
+    }
 }
 
 @media (max-width: 480px) {
@@ -328,6 +339,17 @@ h1, main p, h2, li {
 
     .label {
         font-size: 4vw; /* Ajuste la taille de la police pour les labels */
+    }
+    main {
+        padding: 10px;
+        padding-bottom: 25px; /* Encore plus de réduction pour l'espace au bas */
+    }
+
+    main p, main h2 {
+        margin-bottom: 10px; /* Marges encore plus réduites entre les éléments */
+        /* Pour les très petits écrans, considérez d'ignorer la max-width pour permettre au texte de s'étendre pleinement */
+        max-width: 100%; /* Permet aux éléments de s'étendre à la largeur complète */
+        text-align: justify; /* Optionnel: vous pouvez choisir de justifier le texte pour une meilleure lisibilité */
     }
 
 }
