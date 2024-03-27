@@ -220,6 +220,8 @@ img {
 /* POLICE DE CARACTERE*/
 
 h1, main p, h2, li {
+    font-size: calc(1em + 2vw); /* Dynamiquement ajuste la taille de la police */
+    padding: 0 3%; /* Padding réduit pour les petits écrans */
     font-family: "Times New Roman", Times, serif; /* Changer la police pour les h1 et p dans le main */
 }
 
@@ -279,10 +281,8 @@ h1, main p, h2, li {
         font-size: 2.5vw; /* Ajuste la taille de la police des étiquettes */
     }
     h1, main p, h2, li {
-        font-size: calc(1em + 2vw); /* Augmente la taille de la police sur les téléphones pour améliorer la lisibilité */
-        padding: 0 3%; /* Réduit le padding sur les petits écrans */
+        font-size: calc(1em + 1.5vw); /* Taille de police ajustée pour les tablettes */
     }
-
 }
 
 /* Adaptations spécifiques pour les smartphones */
@@ -310,8 +310,17 @@ h1, main p, h2, li {
     }
 
     /* Ajustements de police pour garantir la lisibilité */
-    h1, main p, h2, li {
-        font-size: calc(1em + 2vw); /* Augmente la taille de la police sur les téléphones pour améliorer la lisibilité */
-        padding: 0 3%; /* Réduit le padding sur les petits écrans */
+    h1, h2, li {
+        font-size: calc(1em + 2vw); /* Taille de police ajustée pour les téléphones */
+        display: inline-block; /* Permet aux éléments de s'aligner horizontalement quand possible */
+        width: auto; /* Assure que les éléments prennent la largeur de leur contenu */
+        margin: 0 2% 2% 2%; /* Ajoute un petit espace autour des éléments */
+    }
+
+    main p {
+        font-size: calc(1em + 2vw); /* Maintient la taille de police pour la lisibilité */
+        display: block; /* Les paragraphes continuent de s'afficher en bloc */
+        width: 100%; /* Les paragraphes prennent toute la largeur */
+        margin-bottom: 20px; /* Espacement entre les paragraphes */
     }
 }
