@@ -167,21 +167,7 @@ img {
 
 }
 
-/*.rectangle {
-    max-width: 850px; /* Largeur maximale du rectangle */
-    /*width: 800px; /* Ajustement automatique de la largeur en fonction du contenu */
-    /*height: 250px ; /* Ajustement automatique de la hauteur en fonction du contenu */
-    /*background-color: rgba(255, 255, 255, 1); /* Fond gris avec opacité de 80% */
-    /*border-radius: 25px; /* Coins arrondis */
-   /* display: flex; /* Utilisation de flexbox */
-    /*margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-image: linear-gradient(to right, black, white);
-    border-image-slice: 1;
-    border-width: 7px; 
-    border-style: solid; /* Style de la bordure */
-/*}*/
+
 .rectangle {
     background: radial-gradient(circle, #ddd 10%, #000 60%); /* Dégradé du haut et bas vers le centre */; /* Dégradé radial */
     border-radius: 50%;
@@ -290,16 +276,22 @@ h1, main p, h2, li {
     }
 
     .countdown-item {
-        width: 20%; /* Réduit la largeur de chaque élément de compte à rebours */
-        margin: 5px; /* Ajuste les marges pour garantir un espacement uniforme */
-        font-size: 20px; /* Ajuste la taille de la police pour une meilleure visibilité */
-        padding: 10px; /* Ajuste le padding pour garder le contenu lisible */
+        width: 15vw; /* Ajuste la taille des éléments du compte à rebours */
+        height: 15vw; /* Garde les éléments carrés */
+        font-size: 5vw; /* Ajuste la taille de la police en fonction de la largeur de l'écran */
+        padding: 2vw; /* Ajuste le padding */
+        margin: 1vw; /* Ajuste les marges pour éviter le chevauchement */
     }
 
     .rectangle {
-        width: 90%; /* Ajuste la largeur du rectangle */
-        height: 90%; /* Ajuste la hauteur pour maintenir le ratio d'aspect */
-        padding: 10px; /* Ajuste le padding */
+        /* Ajuste la taille pour s'adapter aux petits écrans */
+        width: 80vw; /* Utilise un pourcentage de la largeur de la vue pour la largeur */
+        height: 80vw; /* Même valeur que la largeur pour maintenir l'aspect circulaire */
+        max-width: none; /* Annule la max-width précédente */
+        padding: 5vw; /* Ajuste le padding en fonction de la taille de l'écran */
+    }
+    .label {
+        font-size: 3vw; /* Ajuste la taille de la police des labels */
     }
 }
 
@@ -321,9 +313,21 @@ h1, main p, h2, li {
         padding: 10px;
     }
 
+    .rectangle {
+        width: 90vw; /* Augmente la largeur pour les très petits écrans */
+        height: 90vw; /* Maintient l'aspect circulaire */
+        padding: 10px; /* Ajuste le padding pour les très petits écrans */
+    }
+
     .countdown-item {
-        width: 30%; /* Augmente la largeur pour mieux s'adapter aux très petits écrans */
-        font-size: 18px; /* Ajuste légèrement la taille de la police pour économiser de l'espace */
+        width: 20vw; /* Ajuste la taille pour les très petits écrans */
+        height: 20vw; /* Maintient l'aspect carré */
+        font-size: 6vw; /* Ajuste la taille de la police pour les très petits écrans */
+        padding: 3vw; /* Ajuste le padding */
+    }
+
+    .label {
+        font-size: 4vw; /* Ajuste la taille de la police pour les labels */
     }
 
 }
