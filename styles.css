@@ -240,7 +240,6 @@ h1, main p, h2, li {
     }
 
     header {
-        flex-direction: column; /* Empile les éléments de l'en-tête verticalement */
         padding: 10px 0;
     }
 
