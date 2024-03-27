@@ -174,8 +174,7 @@ img {
     background-color: rgba(255, 255, 255, 0.2); /* Fond gris avec opacité de 80% */
     border-radius: 25px; /* Coins arrondis */
     display: flex; /* Utilisation de flexbox */
-    align-items: center; /* Centrer verticalement le contenu */
-    justify-content: center; /* Centrer horizontalement le contenu */
+
 }
 
 .countdown-item {
