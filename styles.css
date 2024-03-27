@@ -268,9 +268,9 @@ h1, main p, h2, li {
     }
 
     .rectangle {
-        width: 100%; /* Adapter à la largeur de l'écran */
-        height: 100%; /* Hauteur automatique */
-
+        width: 100px; /* Adapter à la largeur de l'écran */
+        height: 100px; /* Hauteur automatique */
+        border-radius: 50%;
 
     }
 
