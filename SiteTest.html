@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="C:\Users\P-A\Desktop\Test2\Image icon.png" type="image/x-icon">
+    <title>Soirée de l'été 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <header>
+        <h1>Soirée de l'été 2024</h1>
+    </header>
+    
+    <div class="menu">
+        <div class="burger-menu1" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main>
+        <div class="image-container">
+            <img src="C:\Users\P-A\Desktop\Test2\Photo de la team.png" alt="Description de l'image">
+        </div>
+        <h2>Est ce que vous êtes chaud ce soir ?!</h2>
+        <div class="countdown-container">
+            <div>
+              <div class="countdown-item blue" id="days">00</div>
+              <div class="label">Jours</div>
+            </div>
+            <div>
+              <div class="countdown-item yellow" id="hours">00</div>
+              <div class="label">Heures</div>
+            </div>
+            <div>
+              <div class="countdown-item black" id="minutes">00</div>
+              <div class="label">Minutes</div>
+            </div>
+            <div>
+              <div class="countdown-item green" id="seconds">00</div>
+              <div class="label">Secondes</div>
+            </div>
+            <div>
+              <div class="countdown-item red" id="milliseconds">000</div>
+              <div class="label">Millisecondes</div>
+            </div>
+          </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem id mauris vehicula rutrum. Fusce vitae risus lectus. Morbi luctus interdum libero a ultrices. Ut ut velit eros. Nulla facilisi. Nam id justo nibh. Phasellus a consectetur arcu. Morbi vitae tortor massa. Aliquam non dui vel felis dignissim lobortis. Donec id accumsan sapien.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem id mauris vehicula rutrum. Fusce vitae risus lectus. Morbi luctus interdum libero a ultrices. Ut ut velit eros. Nulla facilisi. Nam id justo nibh. Phasellus a consectetur arcu. Morbi vitae tortor massa. Aliquam non dui vel felis dignissim lobortis. Donec id accumsan sapien.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem id mauris vehicula rutrum. Fusce vitae risus lectus. Morbi luctus interdum libero a ultrices. Ut ut velit eros. Nulla facilisi. Nam id justo nibh. Phasellus a consectetur arcu. Morbi vitae tortor massa. Aliquam non dui vel felis dignissim lobortis. Donec id accumsan sapien.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac sem id mauris vehicula rutrum. Fusce vitae risus lectus. Morbi luctus interdum libero a ultrices. Ut ut velit eros. Nulla facilisi. Nam id justo nibh. Phasellus a consectetur arcu. Morbi vitae tortor massa. Aliquam non dui vel felis dignissim lobortis. Donec id accumsan sapien.</p>
+        <!-- Ajoutez d'autres paragraphes si nécessaire -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Site Web. Tous droits réservés.</p>
+    </footer>
+    
+    <script>
+            // Date de fin du compte à rebours (année, mois (0-11), jour, heure, minute, seconde)
+            const endDate = new Date('2024-08-03T18:59:59.999').getTime();
+
+            // Mettre à jour le compte à rebours chaque milliseconde
+            const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = endDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const milliseconds = distance % 1000;
+
+            document.getElementById('days').innerHTML = padZero(days);
+            document.getElementById('hours').innerHTML = padZero(hours);
+            document.getElementById('minutes').innerHTML = padZero(minutes);
+            document.getElementById('seconds').innerHTML = padZero(seconds);
+            document.getElementById('milliseconds').innerHTML = padZero(milliseconds);
+
+            // Vérifier si le compte à rebours est terminé
+            if (distance < 0) {
+                clearInterval(interval);
+                document.getElementById('days').innerHTML = "00";
+                document.getElementById('hours').innerHTML = "00";
+                document.getElementById('minutes').innerHTML = "00";
+                document.getElementById('seconds').innerHTML = "00";
+                document.getElementById('milliseconds').innerHTML = "000";
+            }
+            }, 1); // Répéter chaque milliseconde
+
+            // Fonction pour ajouter un zéro devant les chiffres si nécessaire
+            function padZero(number) {
+            return (number < 10 ? '0' : '') + number;
+            }
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            var windowHeight = window.innerHeight;
+            var scrollHeight = window.scrollY;
+            var bodyHeight = document.body.offsetHeight;
+    
+            if (windowHeight + scrollHeight >= bodyHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+    
+</body>
+</html>

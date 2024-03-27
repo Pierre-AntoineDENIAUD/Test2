@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000, #333); /* Dégradé noir */
+    color: #fff; /* Couleur du texte */
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.burger-menu1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+/*.menu-icon {
+    /* Définir la taille et la forme de l'icône */
+    /*width: 30px;
+    height: 30px;
+    background-image: url('C:\\Users\\P-A\\Desktop\\Test2\\image anneau.png'); /* Chemin de l'image */
+    /*background-size: cover; /* Redimensionner l'image pour qu'elle couvre l'élément */
+    /*background-position: center; /* Centrer l'image */
+    /*cursor: pointer; /* Afficher le curseur comme pointer */
+    /* Autres propriétés pour l'apparence de l'icône 
+}*/
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.line:hover {
+    background-color: #535063; /* Noir au survol */
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #111; /* Couleur de fond du menu */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.menu.show {
+    transform: translateX(0);
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 80px; /* Pour éviter que le menu ne recouvre le header */
+    padding-left: 20px;
+}
+
+.menu li {
+    margin-bottom: 25px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+}
+
+.menu li a:hover{
+    color: #535063; /* Couleur jaune au survol */
+}
+main {
+    padding: 20px;
+    text-align: justify; /* Justifier le texte dans les paragraphes */
+    padding-bottom: 100px;
+}
+
+main p {
+    margin-bottom: 20px; /* Ajouter un espace entre les paragraphes */
+    text-align: center; /* Centrer le texte dans les paragraphes */
+    max-width: calc(100% - 800px); /* Largeur maximale pour le centrage */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+
+main h2 {
+    margin-bottom: 20px; /* Ajouter un espace entre les paragraphes */
+    text-align: center; /* Centrer le texte dans les paragraphes */
+    max-width: calc(100% - 800px); /* Largeur maximale pour le centrage */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+
+footer {
+    background-color: #222; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+.image-container {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+}
+
+.countdown-item {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    user-select: none; /* Empêche la sélection du texte */
+    pointer-events: none; /* Désactive les événements de la souris */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Texte en blanc */
+}
+
+.blue { background-color: #0099CC; }
+.yellow { background-color: #FFCC00; }
+.black { background-color: #000; }
+.green { background-color: #339900; }
+.red { background-color: #CC0000; }
+
+.label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+/* POLICE DE CARACTERE*/
+
+h1, main p, h2, li {
+    font-family: "Times New Roman", Times, serif; /* Changer la police pour les h1 et p dans le main */
+}
