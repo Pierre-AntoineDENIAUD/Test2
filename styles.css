@@ -183,7 +183,7 @@ img {
     border-style: solid; /* Style de la bordure */
 /*}*/
 .rectangle {
-    background: radial-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.65)),(at center, #ddd 50%, #000 100%); /* Dégradé radial */
+    background: radial-gradient(to bottom at center, #ddd 50%, #000 100%); /* Dégradé radial */
     border-radius: 20px;
     padding: 20px;
     display: flex;
