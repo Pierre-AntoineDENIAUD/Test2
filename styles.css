@@ -177,6 +177,9 @@ img {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-image: linear-gradient(to right, black, white);
+    border-image-slice: 1;
+    border-width: 7px; 
 }
 
 .countdown-item {
@@ -195,9 +198,7 @@ img {
     align-items: center;
     color: #000; /* Texte en blanc */
     margin: 10px -10px;
-    border-image: linear-gradient(to right, black, white);
-    border-image-slice: 1;
-    border-width: 7px; 
+
 }
 
 .blue { border: 5px solid #0099CC; }
