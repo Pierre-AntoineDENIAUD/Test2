@@ -226,101 +226,52 @@ h1, main p, h2, li {
 }
 
 
+/* Autres styles non modifiés... */
 
-
-
-
-/* Styles de base ici... */
-
-/* Adaptations pour les écrans plus petits (tablette et mobile) */
-@media (max-width: 768px) {
-    body, header, .page-title, main, footer, .menu, .image-container, .rectangle, .countdown-container {
+/* Responsive design pour les téléphones */
+@media screen and (max-width: 768px) {
+    header, .page-title, main, footer {
         padding: 10px;
-        margin: 0 auto;
-        width: auto; /* Permet aux éléments de s'étendre pleinement */
-        max-width: 100%; /* Empêche tout dépassement */
     }
 
-    header {
-        padding: 10px 0;
+    .page-title, main h2, main p, footer {
+        font-size: 20px; /* Texte plus petit pour l'affichage mobile */
+    }
+
+    .page-title {
+        width: 95%; /* Plus large pour utiliser l'espace disponible */
+        max-width: none; /* Annuler la largeur maximale */
+    }
+
+    .menu {
+        width: 100%; /* Le menu couvre toute la largeur */
     }
 
     .burger-menu, .burger-menu1 {
-        padding: 10px 0; /* Ajuste le padding pour les icônes de menu */
+        padding-top: 10px;
+        padding-left: 10px;
     }
 
-    .page-title, .menu, .image-container, .rectangle {
-        /* Réduit le padding et ajuste les marges pour les principaux conteneurs */
-        padding: 10px;
-        margin-top: 20px; /* Ajoute de l'espace autour des éléments clés */
+    .image-container {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
-    .menu {
-        width: 100%; /* Le menu s'étend sur toute la largeur */
+    img {
+        max-width: 100%; /* Utiliser toute la largeur disponible */
     }
 
-    img, .rounded-image {
-        max-width: 100%; /* Assure que les images ne dépassent pas leur conteneur */
-        height: auto; /* Maintient le ratio d'aspect des images */
-    }
-
-    .countdown-container {
-        flex-direction: row; /* Positionne les éléments de compte à rebours sur la même ligne */
-        justify-content: space-around; /* Distribue l'espace autour des éléments */
-        padding: 5px 0; /* Ajuste légèrement le padding */
+    .countdown-container, .rectangle {
+        flex-direction: row; /* Empiler verticalement */
+        width: 100%; /* Adapter à la largeur de l'écran */
+        height: auto; /* Hauteur automatique */
     }
 
     .countdown-item {
-        width: 15%; /* Réduit la taille pour permettre l'affichage en ligne */
-        height: auto; /* Ajuste la hauteur automatiquement */
-        padding: 5px; /* Réduit le padding */
-        font-size: 3vw; /* Ajuste la taille de la police dynamiquement */
+        font-size: 24px; /* Ajuster la taille de la police */
     }
 
-    .label {
-        font-size: 2.5vw; /* Ajuste la taille de la police des étiquettes */
-    }
-    h1, main p, h2, li {
-        font-size: calc(1em + 1.5vw); /* Taille de police ajustée pour les tablettes */
-    }
+    /* Ajustements supplémentaires pour une meilleure apparence sur les mobiles */
 }
 
-/* Adaptations spécifiques pour les smartphones */
-@media (max-width: 480px) {
-    /* Réduit davantage les paddings et ajuste les marges pour les très petits écrans */
-    body, header, .page-title, main, footer, .menu, .image-container, .rectangle, .countdown-container {
-        padding: 5px;
-    }
 
-    header, .burger-menu, .burger-menu1, .page-title, .menu, .image-container, .rectangle {
-        margin-top: 10px; /* Diminue l'espace autour des éléments */
-    }
-
-    .menu {
-        padding-top: 60px; /* Fournit de l'espace pour le contenu du menu */
-    }
-
-    .countdown-item {
-        width: 18%; /* Ajuste la taille pour mieux s'adapter */
-        font-size: 4vw; /* Ajuste la taille de la police pour améliorer la lisibilité */
-    }
-
-    .label {
-        font-size: 3vw; /* Ajuste pour une meilleure lisibilité */
-    }
-
-    /* Ajustements de police pour garantir la lisibilité */
-    h1, h2, li {
-        font-size: calc(1em + 2vw); /* Taille de police ajustée pour les téléphones */
-        display: inline-block; /* Permet aux éléments de s'aligner horizontalement quand possible */
-        width: auto; /* Assure que les éléments prennent la largeur de leur contenu */
-        margin: 0 2% 2% 2%; /* Ajoute un petit espace autour des éléments */
-    }
-
-    main p {
-        font-size: calc(1em + 2vw); /* Maintient la taille de police pour la lisibilité */
-        display: block; /* Les paragraphes continuent de s'afficher en bloc */
-        width: 100%; /* Les paragraphes prennent toute la largeur */
-        margin-bottom: 20px; /* Espacement entre les paragraphes */
-    }
-}
