@@ -307,5 +307,6 @@ h1, main p, h2, li {
     /* Ajustements de police pour garantir la lisibilité */
     h1, main p, h2, li {
         font-size: 4vw;
+        flex-direction: row;
     }
 }
