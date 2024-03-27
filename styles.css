@@ -194,7 +194,7 @@ img {
     justify-content: center;
     align-items: center;
     color: #000; /* Texte en blanc */
-    margin: -50 auto;
+    margin: 10px -5px;
 }
 
 .blue { border: 5px solid #0099CC; }
