@@ -167,6 +167,13 @@ img {
     margin-bottom: 50px;;
 }
 
+.rectangle {
+    width: 300px; /* Largeur du rectangle */
+    height: 150px; /* Hauteur du rectangle */
+    background-color: rgba(169, 169, 169, 0.8); /* Fond gris avec opacité de 80% */
+    border-radius: 25px; /* Coins arrondis */
+}
+
 .countdown-item {
     font-size: 36px;
     text-align: center;
