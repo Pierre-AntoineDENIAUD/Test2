@@ -168,10 +168,14 @@ img {
 }
 
 .rectangle {
-    width: 300px; /* Largeur du rectangle */
-    height: 150px; /* Hauteur du rectangle */
+    max-width: 300px; /* Largeur maximale du rectangle */
+    width: auto; /* Ajustement automatique de la largeur en fonction du contenu */
+    height: auto; /* Ajustement automatique de la hauteur en fonction du contenu */
     background-color: rgba(169, 169, 169, 0.8); /* Fond gris avec opacité de 80% */
     border-radius: 25px; /* Coins arrondis */
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centrer verticalement le contenu */
+    justify-content: center; /* Centrer horizontalement le contenu */
 }
 
 .countdown-item {
