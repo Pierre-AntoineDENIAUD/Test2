@@ -193,6 +193,7 @@ img {
     justify-content: center;
     align-items: center;
     color: #000; /* Texte en blanc */
+    margin: 0 auto;
 }
 
 .blue { border: 5px solid #0099CC; }
