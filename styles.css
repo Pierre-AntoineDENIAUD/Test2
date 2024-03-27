@@ -284,6 +284,23 @@ h1, main p, h2, li {
     header h1 {
         font-size: 20px; /* Ajuste la taille de la police pour les titres sur les petits écrans */
     }
+    .countdown-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .countdown-item {
+        width: 20%; /* Réduit la largeur de chaque élément de compte à rebours */
+        margin: 5px; /* Ajuste les marges pour garantir un espacement uniforme */
+        font-size: 20px; /* Ajuste la taille de la police pour une meilleure visibilité */
+        padding: 10px; /* Ajuste le padding pour garder le contenu lisible */
+    }
+
+    .rectangle {
+        width: 90%; /* Ajuste la largeur du rectangle */
+        height: auto; /* Ajuste la hauteur pour maintenir le ratio d'aspect */
+        padding: 10px; /* Ajuste le padding */
+    }
 }
 
 @media (max-width: 480px) {
@@ -304,8 +321,13 @@ h1, main p, h2, li {
         padding: 10px;
     }
 
-    .countdown-container, .countdown-item, .rectangle {
-        flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
+    .countdown-item {
+        width: 30%; /* Augmente la largeur pour mieux s'adapter aux très petits écrans */
+        font-size: 18px; /* Ajuste légèrement la taille de la police pour économiser de l'espace */
+    }
+
+    .rectangle {
+        width: 100%; /* Le rectangle occupe toute la largeur disponible */
     }
 }
 
