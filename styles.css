@@ -279,8 +279,8 @@ h1, main p, h2, li {
         font-size: 2.5vw; /* Ajuste la taille de la police des étiquettes */
     }
     h1, main p, h2, li {
-        font-size: 4vw;
-        flex-wrap: wrap;
+        font-size: calc(1em + 2vw); /* Augmente la taille de la police sur les téléphones pour améliorer la lisibilité */
+        padding: 0 3%; /* Réduit le padding sur les petits écrans */
     }
 
 }
@@ -311,7 +311,7 @@ h1, main p, h2, li {
 
     /* Ajustements de police pour garantir la lisibilité */
     h1, main p, h2, li {
-        font-size: 4vw;
-        flex-wrap: wrap;
+        font-size: calc(1em + 2vw); /* Augmente la taille de la police sur les téléphones pour améliorer la lisibilité */
+        padding: 0 3%; /* Réduit le padding sur les petits écrans */
     }
 }
