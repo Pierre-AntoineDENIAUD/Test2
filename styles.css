@@ -228,130 +228,85 @@ h1, main p, h2, li {
 
 
 
-/* CSS existant non modifié, inclure vos règles existantes ici */
+/* Styles de base ici... */
 
-/* Début des règles responsives */
-
-@media (max-width: 1200px) {
-    .page-title, .rectangle {
-        width: 90%;
-        max-width: none; /* Ajuste la largeur pour les écrans plus petits */
-    }
-
-    .image-container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    header, .burger-menu, .burger-menu1 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
+/* Adaptations pour les écrans plus petits (tablette et mobile) */
 @media (max-width: 768px) {
+    body, header, .page-title, main, footer, .menu, .image-container, .rectangle, .countdown-container {
+        padding: 10px;
+        margin: 0 auto;
+        width: auto; /* Permet aux éléments de s'étendre pleinement */
+        max-width: 100%; /* Empêche tout dépassement */
+    }
+
+    header {
+        flex-direction: column; /* Empile les éléments de l'en-tête verticalement */
+        padding: 10px 0;
+    }
+
     .burger-menu, .burger-menu1 {
-        padding-top: 20px;
+        padding: 10px 0; /* Ajuste le padding pour les icônes de menu */
+    }
+
+    .page-title, .menu, .image-container, .rectangle {
+        /* Réduit le padding et ajuste les marges pour les principaux conteneurs */
+        padding: 10px;
+        margin-top: 20px; /* Ajoute de l'espace autour des éléments clés */
     }
 
     .menu {
-        width: 150px; /* Réduit la largeur du menu sur les petits écrans */
+        width: 100%; /* Le menu s'étend sur toute la largeur */
     }
 
-    .page-title, .rectangle {
-        padding: 10px;
+    img, .rounded-image {
+        max-width: 100%; /* Assure que les images ne dépassent pas leur conteneur */
+        height: auto; /* Maintient le ratio d'aspect des images */
     }
 
-    .image-container {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    header h1 {
-        font-size: 20px; /* Ajuste la taille de la police pour les titres sur les petits écrans */
-    }
     .countdown-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row; /* Positionne les éléments de compte à rebours sur la même ligne */
+        justify-content: space-around; /* Distribue l'espace autour des éléments */
+        padding: 5px 0; /* Ajuste légèrement le padding */
     }
 
     .countdown-item {
-        width: 30px; /* Ajuste la taille des éléments du compte à rebours */
-        height: 30px; /* Garde les éléments carrés */
-        font-size: 15px; /* Ajuste la taille de la police en fonction de la largeur de l'écran */
-        padding: 10px; /* Ajuste le padding */
-        margin: 5px - 5px; /* Ajuste les marges pour éviter le chevauchement */
+        width: 15%; /* Réduit la taille pour permettre l'affichage en ligne */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        padding: 5px; /* Réduit le padding */
+        font-size: 3vw; /* Ajuste la taille de la police dynamiquement */
     }
 
-    .rectangle {
-        /* Ajuste la taille pour s'adapter aux petits écrans */
-        width: 80vw; /* Utilise un pourcentage de la largeur de la vue pour la largeur */
-        height: 80vw; /* Même valeur que la largeur pour maintenir l'aspect circulaire */
-        max-width: none; /* Annule la max-width précédente */
-        padding: 5vw; /* Ajuste le padding en fonction de la taille de l'écran */
-    }
     .label {
-        font-size: 3vw; /* Ajuste la taille de la police des labels */
-    }
-    main {
-        padding: 20px;
-        padding-bottom: 50px; /* Réduction de l'espace au bas sur les écrans plus petits */
-    }
-
-    main p, main h2 {
-        /* Réduction de la marge entre les paragraphes et les titres pour économiser de l'espace */
-        margin-bottom: 15px;
-        /* Adaptation de la largeur maximale pour le centrage */
-        max-width: calc(100% - 40px); /* Réduit l'espace horizontal de padding */
+        font-size: 2.5vw; /* Ajuste la taille de la police des étiquettes */
     }
 }
 
+/* Adaptations spécifiques pour les smartphones */
 @media (max-width: 480px) {
-    .burger-menu, .burger-menu1 {
-        padding-top: 15px;
-        padding-left: 15px;
+    /* Réduit davantage les paddings et ajuste les marges pour les très petits écrans */
+    body, header, .page-title, main, footer, .menu, .image-container, .rectangle, .countdown-container {
+        padding: 5px;
+    }
+
+    header, .burger-menu, .burger-menu1, .page-title, .menu, .image-container, .rectangle {
+        margin-top: 10px; /* Diminue l'espace autour des éléments */
     }
 
     .menu {
-        width: 100%; /* Le menu couvre toute la largeur de l'écran sur les très petits appareils */
-    }
-
-    .menu ul {
-        padding-top: 60px; /* Ajuste le padding pour ne pas recouvrir le header */
-    }
-
-    header, .page-title, .rectangle, main p, main h2 {
-        padding: 10px;
-    }
-
-    .rectangle {
-        width: 90vw; /* Augmente la largeur pour les très petits écrans */
-        height: 90vw; /* Maintient l'aspect circulaire */
-        padding: 10px; /* Ajuste le padding pour les très petits écrans */
+        padding-top: 60px; /* Fournit de l'espace pour le contenu du menu */
     }
 
     .countdown-item {
-        width: 20vw; /* Ajuste la taille pour les très petits écrans */
-        height: 20vw; /* Maintient l'aspect carré */
-        font-size: 6vw; /* Ajuste la taille de la police pour les très petits écrans */
-        padding: 3vw; /* Ajuste le padding */
+        width: 18%; /* Ajuste la taille pour mieux s'adapter */
+        font-size: 4vw; /* Ajuste la taille de la police pour améliorer la lisibilité */
     }
 
     .label {
-        font-size: 4vw; /* Ajuste la taille de la police pour les labels */
-    }
-    main {
-        padding: 10px;
-        padding-bottom: 25px; /* Encore plus de réduction pour l'espace au bas */
+        font-size: 3vw; /* Ajuste pour une meilleure lisibilité */
     }
 
-    main p, main h2 {
-        margin-bottom: 10px; /* Marges encore plus réduites entre les éléments */
-        /* Pour les très petits écrans, considérez d'ignorer la max-width pour permettre au texte de s'étendre pleinement */
-        max-width: 100%; /* Permet aux éléments de s'étendre à la largeur complète */
-        text-align: justify; /* Optionnel: vous pouvez choisir de justifier le texte pour une meilleure lisibilité */
+    /* Ajustements de police pour garantir la lisibilité */
+    h1, main p, h2, li {
+        font-size: 4vw;
     }
-
 }
-
-/* Fin des règles responsives */
