@@ -16,7 +16,7 @@ header {
 .page-title {
     padding: 20px; /* Espace intérieur pour le contenu */
     border: 3px solid #ccc; /* Bordure de 3 pixels de large */
-    border-radius: 10px; /* Coins arrondis */
+    border-radius: 25px; /* Coins arrondis */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Fondu d'ombre */
     width: 85%; /* Largeur de 80% de la largeur de son conteneur */
     max-width: 700px; /* Largeur maximale de 600 pixels */
