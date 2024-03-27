@@ -204,7 +204,7 @@ img {
     right: -7px; /* Ajustez pour chevaucher la bordure */
     bottom: -7px; /* Ajustez pour chevaucher la bordure */
     z-index: -1;
-    background: linear-gradient(to bottom right, black, white); /* Dégradé de couleur noir vers blanc */
+    border-image: linear-gradient(to bottom right, black, white); /* Dégradé de couleur noir vers blanc */
     border-radius: 25px; /* Coins arrondis */
 }
 
