@@ -236,3 +236,77 @@ img {
 h1, main p, h2, li {
     font-family: "Times New Roman", Times, serif; /* Changer la police pour les h1 et p dans le main */
 }
+
+
+
+
+
+
+/* CSS existant non modifié, inclure vos règles existantes ici */
+
+/* Début des règles responsives */
+
+@media (max-width: 1200px) {
+    .page-title, .rectangle {
+        width: 90%;
+        max-width: none; /* Ajuste la largeur pour les écrans plus petits */
+    }
+
+    .image-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header, .burger-menu, .burger-menu1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger-menu, .burger-menu1 {
+        padding-top: 20px;
+    }
+
+    .menu {
+        width: 150px; /* Réduit la largeur du menu sur les petits écrans */
+    }
+
+    .page-title, .rectangle {
+        padding: 10px;
+    }
+
+    .image-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 20px; /* Ajuste la taille de la police pour les titres sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .burger-menu, .burger-menu1 {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .menu {
+        width: 100%; /* Le menu couvre toute la largeur de l'écran sur les très petits appareils */
+    }
+
+    .menu ul {
+        padding-top: 60px; /* Ajuste le padding pour ne pas recouvrir le header */
+    }
+
+    header, .page-title, .rectangle, main p, main h2 {
+        padding: 10px;
+    }
+
+    .countdown-container, .countdown-item, .rectangle {
+        flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
+    }
+}
+
+/* Fin des règles responsives */
