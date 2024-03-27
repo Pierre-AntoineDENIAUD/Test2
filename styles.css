@@ -185,7 +185,7 @@ img {
     padding: 20px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin: 10px -5px; /* Marge négative pour superposer légèrement les cercles */
     user-select: none; /* Empêche la sélection du texte */
     pointer-events: none; /* Désactive les événements de la souris */
     width: 70px;
@@ -193,8 +193,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000; /* Texte en blanc */
-    margin: 10px -5px;
+    color: #000; /* Texte en noir */
+    transform: scale(0.9); /* Réduire légèrement la taille des cercles */
 }
 
 .blue { border: 5px solid #0099CC; }
