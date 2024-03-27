@@ -145,6 +145,10 @@ img {
     margin: auto;
 }
 
+.rounded-image {
+    border-radius: 10px; /* Vous pouvez ajuster la valeur pour changer le degré d'arrondi */
+}
+
 .countdown-container {
     display: flex;
     justify-content: center;
