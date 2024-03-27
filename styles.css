@@ -168,7 +168,7 @@ img {
 
 .rectangle {
     max-width: 700px; /* Largeur maximale du rectangle */
-    width: auto; /* Ajustement automatique de la largeur en fonction du contenu */
+    width: 800px; /* Ajustement automatique de la largeur en fonction du contenu */
     height: 250px ; /* Ajustement automatique de la hauteur en fonction du contenu */
     background-color: rgba(255, 255, 255, 0.9); /* Fond gris avec opacité de 80% */
     border-radius: 25px; /* Coins arrondis */
