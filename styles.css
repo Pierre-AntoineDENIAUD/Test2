@@ -220,7 +220,7 @@ img {
 /* POLICE DE CARACTERE*/
 
 h1, main p, h2, li {
-    font-size: calc(1em + 2vw); /* Dynamiquement ajuste la taille de la police */
+    font-size: 30px; /* Dynamiquement ajuste la taille de la police */
     padding: 0 3%; /* Padding réduit pour les petits écrans */
     font-family: "Times New Roman", Times, serif; /* Changer la police pour les h1 et p dans le main */
 }
