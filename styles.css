@@ -470,16 +470,19 @@ footer > .navbar-grid > .links ion-icon{
 		height: 550px;
 	}
     .rectangle{
-        width: 60%;
+        width: 50%;
+        height: 50%;
 	}
     .countdown-item {
-        width: 60%;
+        width: 50%;
+        height: 50%;
     
     }
     
    
     .label {
-        width: 60%;
+        width: 50%;
+        height: 50%;
     }
 	.get-started > *, .get-started > p, .get-started > img, .get-started > h2 {
 		width: 85%;
