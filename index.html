@@ -147,65 +147,90 @@
     
       </main>
     
-    <footer>
-        <p>&copy; 2024 Site Web. Tous droits réservés.</p>
-    </footer>
+      <footer>
+        <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a>
+        <div class="navbar-grid">
+          <div>
+            <img src="images/icon-location.svg" alt="location">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+          </div>
+          <div class="contacts">
+            <div>
+              <img src="images/icon-phone.svg" alt="phone">
+              <p>+1-543-123-4567</p>
+            </div>
     
+            <div>
+              <img src="images/icon-email.svg" alt="location">
+              <p>example@fylo.com</p>
+            </div>
+          </div>
     
-    <script>
-            // Date de fin du compte à rebours (année, mois (0-11), jour, heure, minute, seconde)
-            const endDate = new Date('2024-08-03T18:59:59.999').getTime();
-
-            // Mettre à jour le compte à rebours chaque milliseconde
-            const interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = endDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            const milliseconds = distance % 1000;
-
-            document.getElementById('days').innerHTML = padZero(days);
-            document.getElementById('hours').innerHTML = padZero(hours);
-            document.getElementById('minutes').innerHTML = padZero(minutes);
-            document.getElementById('seconds').innerHTML = padZero(seconds);
-            document.getElementById('milliseconds').innerHTML = padZero(milliseconds);
-
-            // Vérifier si le compte à rebours est terminé
-            if (distance < 0) {
-                clearInterval(interval);
-                document.getElementById('days').innerHTML = "00";
-                document.getElementById('hours').innerHTML = "00";
-                document.getElementById('minutes').innerHTML = "00";
-                document.getElementById('seconds').innerHTML = "00";
-                document.getElementById('milliseconds').innerHTML = "000";
-            }
-            }, 1); // Répéter chaque milliseconde
-
-            // Fonction pour ajouter un zéro devant les chiffres si nécessaire
-            function padZero(number) {
-            return (number < 10 ? '0' : '') + number;
-            }
-        function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            menu.classList.toggle('show');
+          <nav>
+            <a href="#"><p>About Us</p></a>
+            <a href="#"><p>Jobs</p></a>
+            <a href="#"><p>Press</p></a>
+            <a href="#"><p>Blog</p></a>
+          </nav>
+    
+          <nav>
+            <a href="#"><p>Terms</p></a>
+            <a href="#"><p>Contact Us</p></a>
+            <a href="#"><p>Privacy</p></a>
+          </nav>
+    
+          <div class="links">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"> </script>
+      <script>
+        // Date de fin du compte à rebours (année, mois (0-11), jour, heure, minute, seconde)
+        const endDate = new Date('2024-08-03T18:59:59.999').getTime();
+    
+        // Mettre à jour le compte à rebours chaque milliseconde
+        const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+    
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const milliseconds = distance % 1000;
+    
+        document.getElementById('days').innerHTML = padZero(days);
+        document.getElementById('hours').innerHTML = padZero(hours);
+        document.getElementById('minutes').innerHTML = padZero(minutes);
+        document.getElementById('seconds').innerHTML = padZero(seconds);
+        document.getElementById('milliseconds').innerHTML = padZero(milliseconds);
+    
+        // Vérifier si le compte à rebours est terminé
+        if (distance < 0) {
+            clearInterval(interval);
+            document.getElementById('days').innerHTML = "00";
+            document.getElementById('hours').innerHTML = "00";
+            document.getElementById('minutes').innerHTML = "00";
+            document.getElementById('seconds').innerHTML = "00";
+            document.getElementById('milliseconds').innerHTML = "000";
         }
-
-        window.addEventListener('scroll', function() {
-    var footer = document.querySelector('footer');
-    var windowHeight = window.innerHeight;
-    var scrollHeight = document.body.scrollHeight; // Hauteur totale de la page
-    var scrollPosition = window.scrollY + windowHeight; // Position actuelle de défilement + hauteur de la fenêtre
-
-    if (scrollPosition >= scrollHeight) {
-        footer.classList.add('visible');
-    } else {
-        footer.classList.remove('visible');
-    }
-});
-    </script>
+        }, 1); // Répéter chaque milliseconde
     
-</body>
+        // Fonction pour ajouter un zéro devant les chiffres si nécessaire
+        function padZero(number) {
+        return (number < 10 ? '0' : '') + number;
+        }
+    </script>
+    </body>
+    
 </html>
