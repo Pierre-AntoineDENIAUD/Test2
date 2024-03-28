@@ -8,31 +8,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="burger-menu" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
     <header>
-        <div class="page-title">
-            <h1>Soirée de l'été 2024</h1>
-        </div>
-
-    </header>
     
-    <div class="menu">
-        <div class="burger-menu1" onclick="toggleMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+
+        <div class="navbar">
+        <div class="logo" onclick="toggleMenu()">
+          <img src="./image anneau.png" alt="logo">
         </div>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+        <div class="menu"></div>
+          <nav>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          </nav>
+        </div>
+        </div>
+      </header>
+
+
+
+
+
+
+    
+
     
     <main>
         <div class="image-container">
@@ -73,6 +75,7 @@
     <footer>
         <p>&copy; 2024 Site Web. Tous droits réservés.</p>
     </footer>
+    
     
     <script>
             // Date de fin du compte à rebours (année, mois (0-11), jour, heure, minute, seconde)
@@ -116,17 +119,17 @@
         }
 
         window.addEventListener('scroll', function() {
-            var footer = document.querySelector('footer');
-            var windowHeight = window.innerHeight;
-            var scrollHeight = window.scrollY;
-            var bodyHeight = document.body.offsetHeight;
-    
-            if (windowHeight + scrollHeight >= bodyHeight) {
-                footer.style.display = 'block';
-            } else {
-                footer.style.display = 'none';
-            }
-        });
+    var footer = document.querySelector('footer');
+    var windowHeight = window.innerHeight;
+    var scrollHeight = document.body.scrollHeight; // Hauteur totale de la page
+    var scrollPosition = window.scrollY + windowHeight; // Position actuelle de défilement + hauteur de la fenêtre
+
+    if (scrollPosition >= scrollHeight) {
+        footer.classList.add('visible');
+    } else {
+        footer.classList.remove('visible');
+    }
+});
     </script>
     
 </body>
