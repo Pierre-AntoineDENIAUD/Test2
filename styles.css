@@ -469,6 +469,11 @@ footer > .navbar-grid > .links ion-icon{
 		margin-bottom: 350px;
 		height: 550px;
 	}
+    .rectangle{
+		margin-top: -200px;
+		margin-bottom: 350px;
+		height: 550px;
+	}
 	.get-started > *, .get-started > p, .get-started > img, .get-started > h2 {
 		width: 85%;
 	}
