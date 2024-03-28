@@ -475,9 +475,9 @@ footer > .navbar-grid > .links ion-icon{
         padding: 20px;
         display: flex;
         gap: 10px;
-        max-width: 425px; /* Largeur maximale du rectangle */
-        width: 425px; /* Ajustement automatique de la largeur en fonction du contenu */
-        height: 425px ; /* Ajustement automatique de la hauteur en fonction du contenu */
+        max-width: 340px; /* Largeur maximale du rectangle */
+        width: 340px; /* Ajustement automatique de la largeur en fonction du contenu */
+        height: 340px ; /* Ajustement automatique de la hauteur en fonction du contenu */
         margin-top: 0px;
         margin-bottom: 0px;
         margin: 0 auto;
@@ -486,16 +486,16 @@ footer > .navbar-grid > .links ion-icon{
     
     
     .countdown-item {
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
-        padding: 10px;
+        padding: 8px;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         margin: 5px;
         user-select: none; /* Empêche la sélection du texte */
         pointer-events: none; /* Désactive les événements de la souris */
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
