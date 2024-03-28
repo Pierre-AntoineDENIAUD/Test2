@@ -470,6 +470,7 @@ footer > .navbar-grid > .links ion-icon{
 		height: 550px;
 	}
     .rectangle{
+        max-width: 850px;
         width: 50%;
         height: 50%;
 	}
