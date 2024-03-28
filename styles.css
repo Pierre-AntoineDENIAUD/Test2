@@ -469,23 +469,46 @@ footer > .navbar-grid > .links ion-icon{
 		margin-bottom: 350px;
 		height: 550px;
 	}
-    .rectangle{
-        max-width: 850px;
-        max-height: 850px;
-        width: 50%;
-        height: 50%;
-	}
+    .rectangle {
+        background: radial-gradient(circle, #ddd 10%, #000 60%); /* Dégradé du haut et bas vers le centre */; /* Dégradé radial */
+        border-radius: 50%;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        max-width: 850px; /* Largeur maximale du rectangle */
+        width: 850px; /* Ajustement automatique de la largeur en fonction du contenu */
+        height: 850px ; /* Ajustement automatique de la hauteur en fonction du contenu */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin: 0 auto;
+    }
+    
+    
+    
     .countdown-item {
-        font-size: 50%;
-        width: 50%;
-        height: 50%;
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        user-select: none; /* Empêche la sélection du texte */
+        pointer-events: none; /* Désactive les événements de la souris */
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000; /* Texte en blanc */
+        margin: 10px -10px;
     
     }
     
-   
     .label {
-        width: 50%;
-        height: 50%;
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 5px;
+        text-align: center;
     }
 	.get-started > *, .get-started > p, .get-started > img, .get-started > h2 {
 		width: 85%;
