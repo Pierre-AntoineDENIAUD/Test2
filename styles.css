@@ -501,9 +501,14 @@ footer > .navbar-grid > .links ion-icon{
         align-items: center;
         color: #000; /* Texte en blanc */
         margin: 10px - 10px;
-        border:10px
+    
     
     }
+    .blue { border: 1px solid #0099CC; }
+    .yellow { border: 1px solid #FFCC00; }
+    .black { border: 1px solid #000; }
+    .green { border: 1px solid #339900; }
+    .red { border: 1px solid #CC0000; }
     
     .label {
         font-size: 6px;
